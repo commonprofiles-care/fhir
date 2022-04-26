@@ -6,3 +6,5 @@ Thumbs.db
 /temp
 /template
 /.idea
+node_modules
+package*.json

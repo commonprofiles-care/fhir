@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="34b19469-7cc4-4bd8-a8f6-2afdeb6ba36b" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2022-03-10T07:31:17.604+00:00" />
+  </meta>
+  <url value="https://commonprofiles.care/StructureDefinition/common-hsaHierarchy/v1" />
+  <version value="1.0.0" />
+  <name value="common-hsaHierarchy" />
+  <status value="draft" />
+  <date value="2022-03-10T07:31:16.1871406+00:00" />
+  <publisher value="Common FHIR profile vendor collaboration" />
+  <description value="This extension is used to describe a healthcare unit's Swedish HSA hierarchy. There are two important levels in the hierarchy:&#xD;&#xA;&#xD;&#xA;HSA Vårdgivare (eng HSA Care Provider) - This is often a region or private healthcare provider and the highest defined level in the hierarchy.&#xD;&#xA;HSA Vårdenhet (eng HSA Department) - This is often a department within a region or private healthcare provider and the lower defined level in the hierarchy.&#xD;&#xA;All official healthcare units in Sweden will have a representation in the national HSA catalogue, and all will have a relationship to a parent HSA Vårdenhet (lower level) and/or HSA Vårdgivare (highest level).&#xD;&#xA;&#xD;&#xA;This can among other things be used to evaluate PDL (Patientdatalagen, eng Patient Data Law) rules." />
+  <purpose value="The extension can be used for use cases related to PDL. E.g. used to indicate to which care provider and care unit a set of information belongs, which can be used to evaluate access according to PDL." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Resource" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Element" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:hsaCareProvider">
+      <path value="Extension.extension" />
+      <sliceName value="hsaCareProvider" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:hsaCareProvider.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="hsaCareProvider" />
+    </element>
+    <element id="Extension.extension:hsaCareProvider.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="Extension.extension:hsaCareProvider.value[x].type">
+      <path value="Extension.extension.value[x].type" />
+      <fixedUri value="Organization" />
+    </element>
+    <element id="Extension.extension:hsaCareProvider.value[x].identifier.use">
+      <path value="Extension.extension.value[x].identifier.use" />
+      <fixedCode value="official" />
+    </element>
+    <element id="Extension.extension:hsaCareProvider.value[x].identifier.system">
+      <path value="Extension.extension.value[x].identifier.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:1.2.752.129.2.1.4.1" />
+    </element>
+    <element id="Extension.extension:hsaCareProvider.value[x].identifier.value">
+      <path value="Extension.extension.value[x].identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:hsaCareUnit">
+      <path value="Extension.extension" />
+      <sliceName value="hsaCareUnit" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:hsaCareUnit.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="hsaCareUnit" />
+    </element>
+    <element id="Extension.extension:hsaCareUnit.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="Extension.extension:hsaCareUnit.value[x].type">
+      <path value="Extension.extension.value[x].type" />
+      <fixedUri value="Organization" />
+    </element>
+    <element id="Extension.extension:hsaCareUnit.value[x].identifier.use">
+      <path value="Extension.extension.value[x].identifier.use" />
+      <fixedCode value="official" />
+    </element>
+    <element id="Extension.extension:hsaCareUnit.value[x].identifier.system">
+      <path value="Extension.extension.value[x].identifier.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:1.2.752.129.2.1.4.1" />
+    </element>
+    <element id="Extension.extension:hsaCareUnit.value[x].identifier.value">
+      <path value="Extension.extension.value[x].identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://commonprofiles.care/StructureDefinition/common-hsaHierarchy/v1" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
