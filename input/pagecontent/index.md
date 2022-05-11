@@ -1,3 +1,33 @@
 # SvenskaIndustriProfiler
 
-Feel free to modify this index page with your own awesome content!
+## Introduction
+This ImplementationGuide is published by a collaborative group of Swedish vendors of healthcare IT systems. It includes implementation profiles, extensions and value sets created by the group.
+It also includes core profiles, value sets and extensions which have not been published by this group but are used in one way or another in the implementation profiles. One example is the Swedish base profiles (link) which have been derived to implementation profiles published in this ImplementationGuide.
+
+### Published profiles:
+
+|Name|FHIR resource|
+|----|----|
+|PatientSeVendorLite|Patient|
+|PractitionerSeVendorLite|Practitioner|
+|OrganizationSeVendorLite|Organization|
+|ServiceRequestSeVendorLite|ServiceRequest|
+
+### Ongoing/upcoming work:
+* Profiles and workflow patterns for appointment bookings.
+
+
+## The collaborative group
+The development, administration and publishing of the FHIR artifacts is carried out by a collaborative group with representation from
+* Cambio
+* Caresent
+* Doctrin
+* Chorus
+* Kry
+* ImagineCare
+
+We meet biweekly to work with ongoing tasks. For hands-on profiling activities we usually book separate focus meetings for those interested. The biweekly meetings also functions as a review session of the created FHIR artifacts.
+
+
+## Want to collaborate?
+We encourage collaboration and to sharing of knowledge in this area. If you are interested to join this initiative or collaborate in some other way,  please contact us on: commonprofiles@care.se
