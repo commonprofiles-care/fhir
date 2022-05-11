@@ -8,9 +8,9 @@ It also includes core profiles, value sets and extensions which have not been pu
 
 |Name|FHIR resource|
 |----|----|
-|PatientSeVendorLite|Patient|
-|PractitionerSeVendorLite|Practitioner|
-|OrganizationSeVendorLite|Organization|
+|[PatientSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-SEBasePatient.html)|Patient|
+|[PractitionerSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-SEBasePractitioner.html)|Practitioner|
+|[OrganizationSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-SEBaseOrganization.html)|Organization|
 |ServiceRequestSeVendorLite|ServiceRequest|
 
 ### Ongoing/upcoming work:
@@ -23,7 +23,6 @@ The development, administration and publishing of the FHIR artifacts is carried 
 * Caresent
 * Doctrin
 * Chorus
-* Kry
 * ImagineCare
 
 We meet biweekly to work with ongoing tasks. For hands-on profiling activities we usually book separate focus meetings for those interested. The biweekly meetings also functions as a review session of the created FHIR artifacts.
