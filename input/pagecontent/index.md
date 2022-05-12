@@ -29,4 +29,4 @@ We meet biweekly to work with ongoing tasks. For hands-on profiling activities w
 
 
 ## Want to collaborate?
-We encourage collaboration and to sharing of knowledge in this area. If you are interested to join this initiative or collaborate in some other way,  please contact us on: commonprofiles@care.se
+We encourage collaboration and to sharing of knowledge in this area. If you are interested to join this initiative or collaborate in some other way,  please contact us on: info@commonprofiles.care
