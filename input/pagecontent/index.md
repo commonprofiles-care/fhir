@@ -8,9 +8,9 @@ It also includes core profiles, value sets and extensions which have not been pu
 
 |Name|FHIR resource|
 |----|----|
-|[PatientSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-SEBasePatient.html)|Patient|
-|[PractitionerSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-SEBasePractitioner.html)|Practitioner|
-|[OrganizationSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-SEBaseOrganization.html)|Organization|
+|[PatientSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-PatientSEVendorLite.html)|Patient|
+|[PractitionerSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-PractitionerSEVendorLite.html)|Practitioner|
+|[OrganizationSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-OrganizationSEVendorLite.html)|Organization|
 |ServiceRequestSeVendorLite|ServiceRequest|
 
 ### Ongoing/upcoming work:
@@ -20,7 +20,7 @@ It also includes core profiles, value sets and extensions which have not been pu
 ## The collaborative group
 The development, administration and publishing of the FHIR artifacts is carried out by a collaborative group with representation from
 * Cambio
-* Caresent
+* Carasent
 * Doctrin
 * Chorus
 * ImagineCare
