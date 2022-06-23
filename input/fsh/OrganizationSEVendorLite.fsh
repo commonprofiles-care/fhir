@@ -59,24 +59,24 @@ Description: """This is a light weight Swedish Organization profile.
 * type[careUnit] ^definition = "This slice should be used to communicate that this Organization is a care unit, according to Swedish HSA definition."
 * type[careUnit].coding 1..1 MS
 * type[careUnit].coding.system = SCT
-* type[careUnit].coding.system MS
+* type[careUnit].coding.system 1.. MS
 * type[careUnit].coding.version ^definition = "Swedish version of Snomed CT."
-* type[careUnit].coding.version MS
+* type[careUnit].coding.version 1.. MS
 * type[careUnit].coding.version = "http://snomed.info/sct/45991000052106"
 * type[careUnit].coding.code = #43741000
-* type[careUnit].coding.code MS
+* type[careUnit].coding.code 1.. MS
 * type[careUnit].coding.code ^definition = "Snomed CT concept 43741000| vårdenhet|"
 
 * type[careProvider] MS
 * type[careProvider] ^definition = "This slice should be used to communicate that this Organization is a care provider, according to Swedish HSA definition."
 * type[careProvider].coding 1..1 MS
+* type[careProvider].coding.system 1.. MS
 * type[careProvider].coding.system = SCT
-* type[careProvider].coding.system MS
 * type[careProvider].coding.version ^definition = "Swedish version of Snomed CT."
-* type[careProvider].coding.version MS
+* type[careProvider].coding.version 1.. MS
 * type[careProvider].coding.version = "http://snomed.info/sct/45991000052106"
 * type[careProvider].coding.code = #143591000052106
-* type[careProvider].coding.code MS
+* type[careProvider].coding.code 1.. MS
 * type[careProvider].coding.code ^comment = "The Snomed CT concept 143591000052106 | vårdgivare| is expected to be included in the Swedish Snomed CT release planned for 2022-05-31."
 
 * telecom MS
