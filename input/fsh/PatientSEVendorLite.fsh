@@ -1,4 +1,4 @@
-Profile: CommonsPatient
+Profile: PatientSEVendorLite
 Parent: SEBasePatient
 Description: "Simplified patient for identification for communication between systems in Sweden"
 
@@ -29,8 +29,8 @@ Description: "Simplified patient for identification for communication between sy
 * managingOrganization ..0
 
 
-Instance: CommonsPatientExample
-InstanceOf: CommonsPatient
+Instance: PatientSEVendorLiteExample
+InstanceOf: PatientSEVendorLite
 Description: "Patient example."
 * name
   * given[0] = "Kalle"
