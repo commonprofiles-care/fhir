@@ -20,7 +20,7 @@ It also includes core profiles, value sets and extensions which have not been pu
 ## The collaborative group
 The development, administration and publishing of the FHIR artifacts is carried out by a collaborative group with representation from
 * Cambio
-* Caresent
+* Carasent
 * Doctrin
 * Chorus
 * ImagineCare
