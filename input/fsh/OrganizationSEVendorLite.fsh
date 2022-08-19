@@ -32,7 +32,7 @@ Description: """This is a light weight Swedish Organization profile.
 * identifier[hsaid].system MS
 * identifier[hsaid].system = HSA_ORG_ID
 * identifier[hsaid].system ^short = "URI for objects (e.g. organizations or practitioners) in the HSA catalog."
-* identifier[hsaid].value MS
+* identifier[hsaid].value 1.. MS
 * identifier[hsaid].value ^short = "HSA id."
 
 * identifier[organizationIdentifier] MS
@@ -43,7 +43,7 @@ Description: """This is a light weight Swedish Organization profile.
 * identifier[organizationIdentifier].system MS
 * identifier[organizationIdentifier].system = SE_ORG_ID
 * identifier[organizationIdentifier].system ^short = "URI for Swedish organization number."
-* identifier[organizationIdentifier].value MS
+* identifier[organizationIdentifier].value 1.. MS
 * identifier[organizationIdentifier].value ^short = "Swedish organization id."
 
 * type MS
