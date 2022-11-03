@@ -47,10 +47,10 @@ Description: """This is a light weight Swedish Organization profile.
 * identifier[organizationIdentifier].value ^short = "Swedish organization id."
 
 * type MS
-* type ^slicing.discriminator.type = #pattern
-* type ^slicing.discriminator.path = "code"
+* type ^slicing.discriminator.type = #value
+* type ^slicing.discriminator.path = "coding.code"
 * type ^slicing.rules = #open
-* type ^slicing.description = "Unordered, Open, by system(Value)"
+* type ^slicing.description = "Unordered, Open, by coding(code)"
 * type contains
             careUnit ..1 MS
         and careProvider ..1 MS
