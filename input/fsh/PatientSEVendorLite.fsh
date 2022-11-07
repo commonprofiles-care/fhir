@@ -1,20 +1,18 @@
 Profile: PatientSEVendorLite
 Parent: SEBasePatient
 Description: "Simplified patient for identification for communication between systems in Sweden"
+* identifier 1.. MS
 
 * identifier[personnummer] ..1
 * identifier[samordningsnummer] ..1
+* identifier[nationelltReservnummer] ..1
 
-* identifier[personnummer].value 1.. MS
-* identifier[samordningsnummer].value 1.. MS
-* identifier[nationelltReservnummer].value 1.. MS
-
-* identifier 1..1
 * deceased[x] only boolean
 
 *       name
     and identifier[personnummer]
     and identifier[samordningsnummer]
+    and identifier[nationelltReservnummer]
     and identifier
     and deceasedBoolean
   MS

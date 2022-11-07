@@ -25,8 +25,11 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
-#   hl7.fhir.us.core: 3.1.0
+#dependencies:
+#  se-baseprofile:
+#    id: se-baseprofile
+#    uri: ./source_profiles/se-baseprofiles_1.tgz
+#    version: 1
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
