@@ -1,1 +1,0 @@
-This directory contains profiles that are referred to from _our_ profiles, but which are not included as dependencies for any reason.
