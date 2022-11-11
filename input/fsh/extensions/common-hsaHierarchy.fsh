@@ -27,12 +27,12 @@ This can among other things be used to evaluate PDL (Patientdatalagen, eng Patie
 * extension[hsaCareProvider].value[x] only Reference(Organization)
 * extension[hsaCareProvider].value[x].type = "Organization" (exactly)
 * extension[hsaCareProvider].value[x].identifier.system 1..
-* extension[hsaCareProvider].value[x].identifier.system = "urn:oid:1.2.752.129.2.1.4.1" (exactly)
+* extension[hsaCareProvider].value[x].identifier.system = "urn:oid:1.2.752.29.4.19" (exactly)
 * extension[hsaCareProvider].value[x].identifier.value 1..
 * extension[hsaCareUnit].value[x] 1..
 * extension[hsaCareUnit].value[x] only Reference(Organization)
 * extension[hsaCareUnit].value[x].type = "Organization" (exactly)
 * extension[hsaCareUnit].value[x].identifier.system 1..
-* extension[hsaCareUnit].value[x].identifier.system = "urn:oid:1.2.752.129.2.1.4.1" (exactly)
+* extension[hsaCareUnit].value[x].identifier.system = "urn:oid:1.2.752.29.4.19" (exactly)
 * extension[hsaCareUnit].value[x].identifier.value 1..
 * url = "https://commonprofiles.care/StructureDefinition/common-hsaHierarchy" (exactly)
