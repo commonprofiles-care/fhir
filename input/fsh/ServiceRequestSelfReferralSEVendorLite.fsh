@@ -33,6 +33,21 @@ Description: "This profile aims to support use cases concerning nationally defin
     and reasonCode[chiefComplaint].coding.code
     MS
 
+* intent = #order
+
+* basedOn ..0
+* replaces ..0
+* requisition ..0
+* doNotPerform ..0
+* quantity[x] ..0
+* encounter ..0
+  * ^comment = "Not applicable for self-referral as there has never been an encounter before the self-referral as it is the start of the process."
+* asNeeded[x] ..0
+  * ^comment = "Not applicable for self-referral"
+* specimen ..0
+* patientInstruction ..0
+  * ^comment = "Not applicable for self-referral"
+
 * instantiatesCanonical ..0
 * instantiatesUri ..0
 * category ..0
