@@ -6,6 +6,9 @@ Description: "Simplified patient for identification for communication between sy
 * identifier[personnummer] ..1
 * identifier[samordningsnummer] ..1
 * identifier[nationelltReservnummer] ..1
+* identifier[personnummer].value 1..
+* identifier[samordningsnummer].value 1..
+* identifier[nationelltReservnummer].value 1..
 
 * deceased[x] only boolean
 
