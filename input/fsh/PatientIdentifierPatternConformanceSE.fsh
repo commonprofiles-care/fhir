@@ -2,7 +2,7 @@ Profile: PatientIdentifierPatternConformanceSE
 Parent: PatientSEVendorLite
 Id: PatientIdentifierPatternConformanceSE
 Description: "This profile enables format limitations to be put on the identifier in order to comply with Swedish legislation."
-* ^url = "http://care.commonprofiles.fhir/StructureDefinition/PatientIdentifierPatternConformanceSE"
+//* ^url = "http://care.commonprofiles.fhir/StructureDefinition/PatientIdentifierPatternConformanceSE"
 * ^version = "1.0.0"
 * ^status = #active
 * identifier[personnummer].value obeys personnummer-invariant
