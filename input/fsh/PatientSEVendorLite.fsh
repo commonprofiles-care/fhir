@@ -44,5 +44,5 @@ Description: "Patient example."
 * name
   * given[0] = "Kalle"
   * family = "Krank"
-* identifier[personnummer].value = "19121212-1212"
+* identifier[personnummer].value = "191212121212"
 * deceasedBoolean = false
