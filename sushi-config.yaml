@@ -3,8 +3,8 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: care.commonprofiles
-canonical: https://commonprofiles.care
+id: care.commonprofiles.fhir
+canonical: https://commonprofiles.care/fhir
 name: "Common FHIR profile vendor collaboration"
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI

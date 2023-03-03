@@ -35,4 +35,3 @@ This can among other things be used to evaluate PDL (Patientdatalagen, eng Patie
 * extension[hsaCareUnit].value[x].identifier.system 1..
 * extension[hsaCareUnit].value[x].identifier.system = "urn:oid:1.2.752.29.4.19" (exactly)
 * extension[hsaCareUnit].value[x].identifier.value 1..
-* url = "https://commonprofiles.care/StructureDefinition/common-hsaHierarchy" (exactly)
