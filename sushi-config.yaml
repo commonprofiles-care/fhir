@@ -24,12 +24,12 @@ publisher:
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
-#
-#dependencies:
-#  se-baseprofile:
-#    id: se-baseprofile
-#    uri: ./source_profiles/se-baseprofiles_1.tgz
-#    version: 1
+
+dependencies:
+  hl7se.fhir.base:
+    id: hl7se.fhir.base
+    uri: http://hl7.se/fhir/ig/base
+    version: 1.0.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
