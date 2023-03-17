@@ -10,6 +10,13 @@ Description: "Simplified patient for identification for communication between sy
 * identifier[samordningsnummer].value 1..
 * identifier[nationelltReservnummer].value 1..
 
+* identifier[personnummer].value obeys personnummer-invariant
+* identifier[personnummer].value ^example.label = "General"
+* identifier[personnummer].value ^example.valueString = "191212121212"
+* identifier[samordningsnummer].value obeys samordningsnummer-invariant
+* identifier[samordningsnummer].value ^example.label = "General"
+* identifier[samordningsnummer].value ^example.valueString = "197010632391"
+
 * deceased[x] only boolean
 
 *       name
@@ -44,5 +51,5 @@ Description: "Patient example."
 * name
   * given[0] = "Kalle"
   * family = "Krank"
-* identifier[personnummer].value = "19121212-1212"
+* identifier[personnummer].value = "191212121212"
 * deceasedBoolean = false
