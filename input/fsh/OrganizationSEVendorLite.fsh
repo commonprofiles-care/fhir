@@ -60,7 +60,7 @@ Description: """This is a light weight Swedish Organization profile.
     and identifier[hsaid].value
     and identifier[organizationIdentifier]
     and identifier[organizationIdentifier].system
-    and identifier[organizationIdentifier].value
+    and identifier[organizationIdentifier].value obeys organisationsnummer-invariant
     and type
     and type[careUnit]
     and type[careUnit].coding
