@@ -52,6 +52,7 @@ Description: """This is a light weight Swedish Organization profile.
 * type[careProvider].coding.code = #143591000052106
 * type[careProvider].coding.code 1..
 * type[careProvider].coding.code ^comment = "The Snomed CT concept 143591000052106 | vårdgivare| is expected to be included in the Swedish Snomed CT release planned for 2022-05-31."
+* identifier[organizationIdentifier].value obeys organisationsnummer-invariant
 
 *       name
     and identifier
