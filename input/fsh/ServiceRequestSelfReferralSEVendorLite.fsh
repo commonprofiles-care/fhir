@@ -12,7 +12,7 @@ Description: "This profile aims to support use cases concerning nationally defin
   * ^comment = "Only one reason code is supported by most vendors, hence constrained to 0..1"
 
 * reasonCode ^slicing.discriminator.type = #pattern
-* reasonCode ^slicing.discriminator.path = "code"
+* reasonCode ^slicing.discriminator.path = "coding.code"
 * reasonCode ^slicing.rules = #closed
 * reasonCode ^slicing.description = "Unordered, closed, by coding.code"
 * reasonCode contains
