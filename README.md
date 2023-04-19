@@ -40,7 +40,7 @@ PractitionerSEVendorLite
 Reopening just to clarify what the resulting canonical URL:s for our FHIR artifacts will look now that we have set the domain.
 
 Suggestion:
-https:// commonprofiles.care/< resource type >/<profile/extension/value set name>/< version >
+https:// commonprofiles.care/< resource type >/<profile/extension/value set name>
 
 Examples:
 https://commonprofiles.care/StructureDefinition/OrganizationSEVendorLite
