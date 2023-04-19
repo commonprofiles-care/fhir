@@ -1,5 +1,6 @@
 # fhir
 Build destination: https://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/
+Published destination: https://commonprofiles.care/
 
 More info
 * https://github.com/FHIR/auto-ig-builder/blob/master/README.md
@@ -42,9 +43,9 @@ Suggestion:
 https:// commonprofiles.care/< resource type >/<profile/extension/value set name>/< version >
 
 Examples:
-https://commonprofiles.care/StructureDefinition/OrganizationSEVendorLite/v1
-https://commonprofiles.care/ValueSet/PerfectNameOfAPerfectValueSet/v1
-https://commonprofiles.care/StructureDefinition/common-hsaHierarchy/v1
+https://commonprofiles.care/StructureDefinition/OrganizationSEVendorLite
+https://commonprofiles.care/ValueSet/PerfectNameOfAPerfectValueSet
+https://commonprofiles.care/StructureDefinition/common-hsaHierarchy
 
 Including the resource type follows the same pattern which is used both for the Swedish base profiles and also for the FHIR base resources and profiles. Examples:
 http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/StructureDefinition-SEBaseOrganization.html
