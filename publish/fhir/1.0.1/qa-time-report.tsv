@@ -1,0 +1,9 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-care.commonprofiles.fhir.json	5272	-	0	0	0	0	0	0	2	40	0	0	0	0	0	0	0	1	0	0	247	52	0	0	1	2	0	0
+fsh-generated/resources/StructureDefinition-ServiceRequestSelfReferralSEVendorLite.json	8274	20	0	0	1	0	0	102	0	112	0	0	0	0	0	0	0	0	0	0	297	1897	0	1	0	9	0	1
+fsh-generated/resources/StructureDefinition-common-hsaHierarchy.json	5530	11	0	0	0	0	0	65	0	121	0	0	0	0	0	0	0	1	0	0	187	538	0	0	0	4	0	0
+fsh-generated/resources/Patient-PatientSEVendorLiteExample.json	449	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	5	8	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-ConsentSJF.json	10829	19	0	0	0	0	0	311	0	304	0	0	0	0	0	0	0	3	0	0	727	2164	0	0	0	13	0	2
+fsh-generated/resources/StructureDefinition-PractitionerSEVendorLite.json	3876	19	0	0	0	0	0	147	0	130	0	0	1	0	0	0	0	1	0	0	335	740	0	0	0	7	1	0
+fsh-generated/resources/StructureDefinition-PatientSEVendorLite.json	5675	14	0	0	0	0	0	170	0	148	0	0	0	0	0	0	0	2	0	0	402	1182	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-OrganizationSEVendorLite.json	10005	16	0	0	0	0	0	124	0	121	0	0	0	0	0	0	0	1	0	0	349	1133	0	0	0	7	0	0

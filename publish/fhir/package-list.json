@@ -1,0 +1,34 @@
+﻿{
+  "package-id" : "care.commonprofiles.fhir",
+  "title" : "Common FHIR profile vendor collaboration",
+  "canonical" : "https://commonprofiles.care/fhir",
+  "introduction" : "Version history of the Common FHIR profile vendor collaboration IG",
+  "category" : "EHR Access",
+  "list" : [
+    {
+      "version" : "current",
+      "desc" : "Continuous Integration Build (latest in version control)",
+      "path" : "http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/",
+      "status" : "ci-build",
+      "current" : true
+    },
+    {
+      "version" : "1.0.1",
+      "path" : "https://commonprofiles.care/fhir/1.0.1",
+      "status" : "release",
+      "sequence" : "Releases",
+      "fhirversion" : "4.0.1",
+      "date" : "2023-06-12",
+      "desc" : "Common FHIR profile vendor collaboration"
+    },
+    {
+      "version" : "1.0.0",
+      "path" : "https://commonprofiles.care/fhir/1.0.0",
+      "status" : "release",
+      "sequence" : "Releases",
+      "fhirversion" : "4.0.1",
+      "date" : "2023-03-17",
+      "desc" : "Common FHIR profile vendor collaboration"
+    }
+  ]
+}

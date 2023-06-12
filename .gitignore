@@ -8,3 +8,5 @@ Thumbs.db
 /.idea
 node_modules
 package*.json
+publish/ig-build-zips
+!publish/**/package*.json

@@ -1,0 +1,15 @@
+﻿{
+  "package-id" : "care.commonprofiles.fhir.template",
+  "title" : "FHIR IG Template by commonprofiles.care",
+  "canonical" : "https://commonprofiles.care/templates/care.commonprofiles.fhir.template",
+  "introduction" : "FHIR IG Template by commonprofiles.care",
+  "list" : [
+    {
+      "version" : "current",
+      "desc" : "Continuous Integration Build (latest in version control)",
+      "path" : "http://build.fhir.org/ig/SvenskaIndustriProfiler/templates/branches/master/",
+      "status" : "ci-build",
+      "current" : true
+    }
+  ]
+}

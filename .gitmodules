@@ -1,0 +1,3 @@
+[submodule "hl7/ig-registry"]
+	path = hl7/ig-registry
+	url = git@github.com:FHIR/ig-registry.git

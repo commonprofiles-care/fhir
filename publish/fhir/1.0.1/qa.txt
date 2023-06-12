@@ -1,0 +1,43 @@
+﻿CommonFHIRprofilevendorcollaboration : Validation Results
+=========================================
+
+err = 1, warn = 15, info = 2
+IG Publisher Version: 1.3.16
+Generated Mon Jun 12 11:42:18 CEST 2023. FHIR version 4.0.1 for care.commonprofiles.fhir#1.0.1 (canonical = https://commonprofiles.care/fhir)
+ Build Errors : 0 / 4 / 0
+ /Users/petur/development/fhir/SvenskaIndustriProfiler/temp/care.commonprofiles.fhir#1.0.1/fsh-generated/resources/ImplementationGuide-care.commonprofiles.fhir : 0 / 0 / 1
+ /Users/petur/development/fhir/SvenskaIndustriProfiler/temp/care.commonprofiles.fhir#1.0.1/fsh-generated/resources/Patient-PatientSEVendorLiteExample : 0 / 0 / 1
+ /Users/petur/development/fhir/SvenskaIndustriProfiler/temp/care.commonprofiles.fhir#1.0.1/fsh-generated/resources/StructureDefinition-ConsentSJF : 1 / 1 / 3
+ /Users/petur/development/fhir/SvenskaIndustriProfiler/temp/care.commonprofiles.fhir#1.0.1/fsh-generated/resources/StructureDefinition-OrganizationSEVendorLite : 0 / 3 / 1
+ /Users/petur/development/fhir/SvenskaIndustriProfiler/temp/care.commonprofiles.fhir#1.0.1/fsh-generated/resources/StructureDefinition-PatientSEVendorLite : 0 / 0 / 1
+ /Users/petur/development/fhir/SvenskaIndustriProfiler/temp/care.commonprofiles.fhir#1.0.1/fsh-generated/resources/StructureDefinition-PractitionerSEVendorLite : 0 / 2 / 1
+ /Users/petur/development/fhir/SvenskaIndustriProfiler/temp/care.commonprofiles.fhir#1.0.1/fsh-generated/resources/StructureDefinition-ServiceRequestSelfReferralSEVendorLite : 0 / 3 / 1
+ /Users/petur/development/fhir/SvenskaIndustriProfiler/temp/care.commonprofiles.fhir#1.0.1/fsh-generated/resources/StructureDefinition-common-hsaHierarchy : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-care.commonprofiles.fhir.json ==
+== fsh-generated/resources/Patient-PatientSEVendorLiteExample.json ==
+== fsh-generated/resources/StructureDefinition-ConsentSJF.json ==
+INFORMATION: https://commonprofiles.care/fhir/StructureDefinition/ConsentSJF#Consent.provision.actor: The slice definition for Consent.provision.actor has a maximum of 3 but the slices add up to a maximum of 5. Check that this is what is intended
+ERROR: StructureDefinition/ConsentSJF: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is 'urn:ietf:rfc:3986', then the identifier.value must be a full URI (e.g. start with a scheme), not 'Local eCMS identifier'
+INFORMATION: StructureDefinition/ConsentSJF: StructureDefinition.differential.element.where(path = 'Consent.provision.actor'): The slice definition for Consent.provision.actor has a maximum of 3 but the slices add up to a maximum of 5. Check that this is what is intended
+WARNING: StructureDefinition.where(url = 'https://commonprofiles.care/fhir/StructureDefinition/ConsentSJF'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-OrganizationSEVendorLite.json ==
+WARNING: StructureDefinition/OrganizationSEVendorLite: StructureDefinition.snapshot.element[15].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/OrganizationSEVendorLite: StructureDefinition.snapshot.element[24].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition.where(url = 'https://commonprofiles.care/fhir/StructureDefinition/OrganizationSEVendorLite'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PatientSEVendorLite.json ==
+== fsh-generated/resources/StructureDefinition-PractitionerSEVendorLite.json ==
+WARNING: StructureDefinition/PractitionerSEVendorLite: StructureDefinition.snapshot.element[14].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition.where(url = 'https://commonprofiles.care/fhir/StructureDefinition/PractitionerSEVendorLite'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ServiceRequestSelfReferralSEVendorLite.json ==
+WARNING: StructureDefinition/ServiceRequestSelfReferralSEVendorLite: StructureDefinition.differential.element[23].binding: The valueSet reference http://snomed.info/sct/45991000052106?fhir_vs=refset/60001000052100 on element ServiceRequest.reasonCode could not be resolved
+WARNING: StructureDefinition/ServiceRequestSelfReferralSEVendorLite: StructureDefinition.snapshot.element[40].binding: The valueSet reference http://snomed.info/sct/45991000052106?fhir_vs=refset/60001000052100 on element ServiceRequest.reasonCode could not be resolved
+WARNING: StructureDefinition.where(url = 'https://commonprofiles.care/fhir/StructureDefinition/ServiceRequestSelfReferralSEVendorLite'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-common-hsaHierarchy.json ==
+WARNING: StructureDefinition/common-hsaHierarchy: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://commonprofiles.care/fhir/StructureDefinition/common-hsaHierarchy'): The Implementation Guide contains no examples for this extension

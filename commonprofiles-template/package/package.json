@@ -1,0 +1,13 @@
+﻿{
+  "name": "care.commonprofiles.fhir.template",
+  "version": "1.0.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "FHIR IG Template by commonprofiles.care",
+  "author": "https://commonprofiles.care",
+  "canonical": "https://commonprofiles.care/templates/care.commonprofiles.fhir.template",
+  "base": "fhir.base.template",
+  "dependencies": {
+      "fhir.base.template": "current"
+  }
+}

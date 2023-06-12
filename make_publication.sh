@@ -1,0 +1,1 @@
+java -jar input-cache/publisher.jar -go-publish -source $(pwd)/ -web $(pwd)/publish/ -registry $(pwd)/hl7/ig-registry/fhir-ig-list.json -history $(pwd)/commonprofiles-history-template -templates $(pwd)/publish/templates -temp $(pwd)/temp

@@ -1,16 +1,14 @@
-# SvenskaIndustriProfiler
-
 ## Introduction
-This ImplementationGuide is published by a collaborative group of Swedish vendors of healthcare IT systems. It includes implementation profiles, extensions and value sets created by the group.
-It also includes core profiles, value sets and extensions which have not been published by this group but are used in one way or another in the implementation profiles. One example is the [Swedish base profiles](http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/profiles.html) which have been derived to implementation profiles published in this ImplementationGuide.
+This ImplementationGuide is published by a collaborative group of Swedish stakeholders of healthcare IT systems. It includes implementation profiles, extensions and value sets created by the group.
+It also includes core profiles, value sets and extensions which have not been published by this group but are used in one way or another in the implementation profiles. One example is the [Swedish base profiles](http://hl7.se/fhir/ig/base/profiles.html) which have been derived to implementation profiles published in this ImplementationGuide.
 
 ### Published profiles:
 
 |Name|FHIR resource|
 |----|----|
-|[PatientSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-PatientSEVendorLite.html)|Patient|
-|[PractitionerSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-PractitionerSEVendorLite.html)|Practitioner|
-|[OrganizationSeVendorLite](http://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/branches/master/StructureDefinition-OrganizationSEVendorLite.html)|Organization|
+|[PatientSeVendorLite](StructureDefinition-PatientSEVendorLite.html)|Patient|
+|[PractitionerSeVendorLite](StructureDefinition-PractitionerSEVendorLite.html)|Practitioner|
+|[OrganizationSeVendorLite](StructureDefinition-OrganizationSEVendorLite.html)|Organization|
 |ServiceRequestSeVendorLite|ServiceRequest|
 
 ### Ongoing/upcoming work:

@@ -1,0 +1,18 @@
+{
+  "website" : {
+    "style" : "fhir.layout",
+    "url" : "https://commonprofiles.care/",
+    "server" : "Apache",
+    "org" : "Common FHIR profile vendor collaboration",
+    "index-template" : "index.template"
+  },
+  "layout-rules" : [{
+    "npm" : "care.commonprofiles.fhir",
+    "canonical": "https://commonprofiles.care/fhir",
+    "destination" : "/fhir"
+  }],
+  "feeds" : {
+    "package" : "package-feed.xml",
+    "publication" : "publication-feed.xml"
+  }
+}

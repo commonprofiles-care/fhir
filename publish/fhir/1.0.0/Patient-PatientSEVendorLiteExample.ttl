@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://commonprofiles.care/fhir/Patient/PatientSEVendorLiteExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientSEVendorLiteExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://commonprofiles.care/fhir/StructureDefinition/PatientSEVendorLite"^^xsd:anyURI ;
+       fhir:link <https://commonprofiles.care/fhir/StructureDefinition/PatientSEVendorLite>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Kalle Krank </b> (no stated gender), DoB Unknown ( id: 19121212-1212)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://electronichealth.se/identifier/personnummer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "19121212-1212" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Krank" ] ;
+     fhir:given ( [ fhir:v "Kalle" ] )
+  ] ) ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] . # 
+
+# -------------------------------------------------------------------------------------
+

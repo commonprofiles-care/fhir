@@ -1,0 +1,277 @@
+/*
+    Specific layout and styling, project based
+*/
+/*
+
+- SCAFFOLDING							Groundwork for the site. Background colors are set in less or overruled here
+- SCAFFOLDING OBJECTS					Objects reoccurring on every page
+- COMPONENTS							Everything what can be moved around				
+- BACK TO TOP							Anchor animating to top of the page
+- EXCEPTIONS FOR SPECIFIC SITUATIONS	Some pages are not like the others
+- D-I-D AREA							Do-It-Dirty 
+
+*/
+/* SCAFFOLDING STYLING 
+----------------------------------------------------------------------------------------*/
+html {
+  background-color: transparent;
+}
+body {
+  background-color: #ffffff;
+  position: relative;
+  padding-top: 0;
+}
+.segment {
+  position: relative;
+}
+.segment > .container {
+  background-color: #ffffff;
+  position: relative;
+}
+#segment-header {
+  background-color: #f5f5f5;
+}
+#segment-header > .container {
+  background-color: #e6e6e6;
+}
+#segment-footer {
+  background-color: #707070;
+}
+#segment-footer > .container {
+  background-color: #ad1f2f;
+  color: #ffffff;
+}
+#segment-footer > .container .inner-wrapper {
+  padding: 11px 20px;
+}
+#segment-post-footer {
+  background-color: #f5f5f5;
+}
+#segment-post-footer > .container {
+  background-color: #e6e6e6;
+  min-height: 90px;
+}
+#sidebar > .inner-wrapper {
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+#content > .inner-wrapper,
+.container > .row > .inner-wrapper {
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+/* SCAFFOlDING OBJECTS
+----------------------------------------------------------------------------------------*/
+#logo {
+  float: left;
+  margin-top: 6px;
+  margin-left: 20px;
+  margin-bottom: 4px;
+  display: block;
+}
+#logo img {
+  max-width: 100%;
+}
+#hl7-nav {
+  line-height: 50px;
+  float: right;
+  margin-top: 16px;
+  color: #808080;
+}
+#hl7-nav a {
+  color: inherit;
+}
+#hl7-status {
+  line-height: 50px;
+  float: left;
+  margin-top: 16px;
+  color: maroon;
+}
+#hl7-search {
+  line-height: 50px;
+  float: right;
+  margin-top: 16px;
+  color: maroon;
+}
+#hl7-search a {
+  color: inherit;
+}
+#hl7-logo {
+  float: right;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+#stripe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 8px;
+  background: #999999;
+}
+#notes a {
+  color: #555555;
+}
+/* GENERIC OBJECTS
+----------------------------------------------------------------------------------------*/
+.navbar {
+  clear: both;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-color: #ffffff;
+  border-width: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+.navbar .nav > li > a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar .nav > li > a {
+  padding: 10px 12px;
+  text-shadow: none;
+}
+.navbar .nav > li > a,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.dropdown-menu {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.dropdown-menu li > a {
+  padding: 6px 20px;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  background-color: #333333;
+  background-image: -webkit-linear-gradient(top, #da0c23, #da0c23, color-stop(#333333, 100%));
+  background-image: -moz-linear-gradient(top, #da0c23, #da0c23, color-stop(#333333, 100%));
+  background-image: linear-gradient(to bottom, #da0c23, #da0c23, color-stop(#333333, 100%));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffda0c23', endColorstr='#ff333333', GradientType=0);
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: #333333;
+  background-image: -webkit-linear-gradient(top, #da0c23, #da0c23, color-stop(#333333, 100%));
+  background-image: -moz-linear-gradient(top, #da0c23, #da0c23, color-stop(#333333, 100%));
+  background-image: linear-gradient(to bottom, #da0c23, #da0c23, color-stop(#333333, 100%));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffda0c23', endColorstr='#ff333333', GradientType=0);
+}
+.nav-tabs {
+  margin-bottom: 20px;
+}
+.nav-tabs a {
+  color: #555555;
+}
+.nav-tabs li a:hover,
+.nav-tabs li a:focus {
+  border-bottom-color: #955159;
+}
+.nav-tabs {
+  border-bottom-color: #955159;
+}
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  color: #da0c23;
+  border-color: #955159 #955159 transparent;
+}
+.nav-list > li > a {
+  padding: 3px 15px;
+}
+.breadcrumb {
+  margin-bottom: 0;
+}
+.breadcrumb a {
+  color: #555555;
+}
+.nav-listing {
+  overflow: hidden;
+}
+.nav-listing > li {
+  float: left;
+  width: 25%;
+}
+.nav-listing > li > a {
+  padding: 2px 6px;
+}
+.sectioncount {
+  x-float: right;
+  x-color: #555555;
+  x-font-size: 12px;
+}
+.sectioncount a {
+  color: inherit;
+}
+h1.underlined,
+h2.underlined,
+h3.underlined,
+h4.underlined,
+h5.underlined,
+h6.underlined {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 0.2em;
+}
+p > img {
+  float: left;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+.table td {
+  padding: 6px;
+  line-height: 18px;
+}
+.table th h1,
+.table th h2,
+.table th h3,
+.table th h4,
+.table th h5,
+.table th h6 {
+  margin-bottom: 0;
+}
+.table th.inverted {
+  background-color: #555555;
+  color: #ffffff;
+  border: none!important;
+}
+.table th.inverted h1,
+.table th.inverted h2,
+.table th.inverted h3,
+.table th.inverted h4,
+.table th.inverted h5,
+.table th.inverted h6 {
+  color: inherit;
+}
+pre {
+  font-size: 12px;
+}
+.icon-warning-sign {
+  font-size: 30px;
+  margin-right: 10px;
+  display: block;
+  float: left;
+}
+/* BACK TO TOP
+----------------------------------------------------------------------------------------*/
+
+/* EXCEPTIONS FOR SPECIFIC SITUATIONS
+----------------------------------------------------------------------------------------*/
+/* D-I-D AREA
+----------------------------------------------------------------------------------------*/
