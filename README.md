@@ -5,6 +5,7 @@ Published destination: https://commonprofiles.care/
 More info
 * https://github.com/FHIR/auto-ig-builder/blob/master/README.md
 * https://chat.fhir.org/#narrow/stream/179297-committers.2Fnotification/topic/ig-build
+* https://chat.fhir.org/#narrow/stream/179297-committers.2Fnotification/topic/ig-build/search/svenskaindustriprofiler.2Ffhir
 * https://fhir.github.io/auto-ig-builder/builds.html
 
 #### Naming conventions

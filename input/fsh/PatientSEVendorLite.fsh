@@ -30,20 +30,6 @@ Description: "Simplified patient for identification for communication between sy
 * telecom.system 1.. MS
 * telecom.value 1.. MS
 
-* link ..0
-* active ..0
-* name.use ..0
-* name.period ..0
-* telecom.period ..0
-* address ..0
-* maritalStatus ..0
-* multipleBirth[x] ..0
-* photo ..0
-* contact ..0
-* communication ..0
-* generalPractitioner ..0
-* managingOrganization ..0
-
 
 Instance: PatientSEVendorLiteExample
 InstanceOf: PatientSEVendorLite
