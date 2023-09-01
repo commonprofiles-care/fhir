@@ -1,0 +1,13 @@
+{
+  "package-id" : "care.commonprofiles.fhir",
+  "version" : "1.0.2",
+  "path" : "https://commonprofiles.care/fhir/1.0.2",
+  "milestone" : false,
+  "desc": "Common FHIR profile vendor collaboration",
+  "status" : "release",
+  "sequence" : "Releases",
+  "title" : "Common FHIR profile vendor collaboration",
+  "ci-build" : "http://build.fhir.org/ig/commonprofiles-care/fhir/branches/master/",
+  "category" : "EHR Access",
+  "introduction" : "Common FHIR profile vendor collaboration"
+}
