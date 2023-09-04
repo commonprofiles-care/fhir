@@ -18,13 +18,5 @@ Description: "This is a light weight Swedish Practitioner profile.
 * name only $SEBaseHumanName
 * telecom.system 1.. MS
 * telecom.value 1.. MS
-* telecom.period ..0
-
-* address ..0
-* gender ..0
-* birthDate ..0
-* photo ..0
-* qualification ..0
-* communication ..0
 
 Alias: $SEBaseHumanName = http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseHumanName
