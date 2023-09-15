@@ -13,17 +13,13 @@ Description: "Questionnaire with restrictions for swedish vendors."
 * item.initial ..1 MS
 * item.initial.value[x] only string
 * item.initial.value[x] MS
-* item.initial.valueString MSg
+* item.initial.valueString MS
 * item.repeats 1.. MS
 * item.repeats = false
 * item.readOnly 1.. MS
-* item.repeats = false
+* item.readOnly = false
 
-// Instance: PatientSEVendorLiteExample
-// InstanceOf: PatientSEVendorLite
-// Description: "Patient example."
-// * name
-//   * given[0] = "Kalle"
-//   * family = "Krank"
-// * identifier[personnummer].value = "191212121212"
-// * deceasedBoolean = false
+// Instance: QuestionnaireSEVendorLiteExample
+// InstanceOf: QuestionnaireSEVendorLite
+// Description: "Questionnaire example."
+
