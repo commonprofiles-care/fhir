@@ -1,5 +1,6 @@
 # fhir
 Build destination: https://build.fhir.org/ig/commonprofiles-care/fhir/
+Branches: https://build.fhir.org/ig/commonprofiles-care/fhir/branches/
 Published destination: https://commonprofiles.care/
 
 More info
