@@ -51,3 +51,4 @@ https://commonprofiles.care/StructureDefinition/common-hsaHierarchy
 Including the resource type follows the same pattern which is used both for the Swedish base profiles and also for the FHIR base resources and profiles. Examples:
 http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/StructureDefinition-SEBaseOrganization.html
 https://www.hl7.org/fhir/bodyweight.html
+
