@@ -8,4 +8,4 @@
     To make a new release, a pull request should be approved by at least 2 
     different companies in the group. 
     The release should be taged in git with a release number. 
-    This release number correlate with the version publicized in the IG.
+    This release number correlates with the version published in the IG.
