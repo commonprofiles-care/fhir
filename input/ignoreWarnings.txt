@@ -3,3 +3,14 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# Error from HL7 Base profile
+The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+# Related to example data
+Code System URI 'http://example.com/system' is unknown so the code cannot be validated
+Code System URI 'http://example.com/CodeSystem/any' is unknown so the code cannot be validated
