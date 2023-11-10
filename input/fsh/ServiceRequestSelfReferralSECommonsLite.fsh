@@ -1,4 +1,4 @@
-Profile: ServiceRequestSelfReferralSEVendorLite
+Profile: ServiceRequestSelfReferralSECommonsLite
 Parent: ServiceRequest
 Description: "This profile aims to support use cases concerning nationally defined chief complaints (SWE sökorsak) in Sweden. It can also be used to support a self referral (SWE Vårdbegäran för egen räkning) in a broader perspective."
 

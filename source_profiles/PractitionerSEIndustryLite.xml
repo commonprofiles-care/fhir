@@ -4,9 +4,9 @@
   <meta>
     <lastUpdated value="2022-03-03T11:29:43.711+00:00" />
   </meta>
-  <url value="https://commonprofiles.care/StructureDefinition/PractitionerSEVendorLite/v1" />
+  <url value="https://commonprofiles.care/StructureDefinition/PractitionerSECommonsLite/v1" />
   <version value="1.0.0" />
-  <name value="PractitionerSEVendorLite" />
+  <name value="PractitionerSECommonsLite" />
   <status value="draft" />
   <date value="2022-03-03T11:27:13.9416398+00:00" />
   <publisher value="Common FHIR profile vendor collaboration" />
