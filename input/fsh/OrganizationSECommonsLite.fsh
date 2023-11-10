@@ -1,4 +1,4 @@
-Profile: OrganizationSEVendorLite
+Profile: OrganizationSECommonsLite
 Parent: SEBaseOrganization
 Description: """This is a light weight Swedish Organization profile.
               It can be used when Organizations have been referenced by other resources, such as Observation, ServiceRequest or Appointment.

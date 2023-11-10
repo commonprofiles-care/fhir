@@ -1,4 +1,4 @@
-Profile: PatientSEVendorLite
+Profile: PatientSECommonsLite
 Parent: SEBasePatient
 Description: "Simplified patient for identification for communication between systems in Sweden"
 * identifier 1.. MS
@@ -31,8 +31,8 @@ Description: "Simplified patient for identification for communication between sy
 * telecom.value 1.. MS
 
 
-Instance: PatientSEVendorLiteExample
-InstanceOf: PatientSEVendorLite
+Instance: PatientSECommonsLiteExample
+InstanceOf: PatientSECommonsLite
 Description: "Patient example."
 * name
   * given[0] = "Kalle"
