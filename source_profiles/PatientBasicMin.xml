@@ -3,9 +3,9 @@
   <meta>
     <lastUpdated value="2021-12-02T14:00:20.135+00:00" />
   </meta>
-  <url value="https://commonprofiles.care/StructureDefinition/PatientSEVendorLite/v1" />
+  <url value="https://commonprofiles.care/StructureDefinition/PatientSECommonsLite/v1" />
   <version value="1.0.0" />
-  <name value="PatientSEVendorLite" />
+  <name value="PatientSECommonsLite" />
   <status value="draft" />
   <publisher value="Common FHIR profile vendor collaboration" />
   <description value="This is a light weight Swedish healthcare patient profile. &#xD;&#xA;It can be used when Patients have been referenced by other resources, such as Observation, ServiceRequest or Appointment, to fetch a minimal set of patient information. E.g. for display purposes.&#xD;&#xA;It can also be used for presenting a simple list of patients with associated information." />
