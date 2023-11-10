@@ -32,9 +32,9 @@ Profile type: Lite - Intended purpose is a very small resource that contains onl
 
 The name will be in UpperCamelCase
 
-OrganizationSEVendorLite
-PatientSEVendorLite
-PractitionerSEVendorLite
+OrganizationSECommonsLite
+PatientSECommonsLite
+PractitionerSECommonsLite
 
 
 #### Canonical URL:s
@@ -44,7 +44,7 @@ Suggestion:
 https:// commonprofiles.care/< resource type >/<profile/extension/value set name>
 
 Examples:
-https://commonprofiles.care/StructureDefinition/OrganizationSEVendorLite
+https://commonprofiles.care/StructureDefinition/OrganizationSECommonsLite
 https://commonprofiles.care/ValueSet/PerfectNameOfAPerfectValueSet
 https://commonprofiles.care/StructureDefinition/common-hsaHierarchy
 

@@ -1,4 +1,4 @@
-Profile: PractitionerSEVendorLite
+Profile: PractitionerSECommonsLite
 Parent: SEBasePractitioner
 Description: "This is a light weight Swedish Practitioner profile. 
                 It can be used when practitioners have been referenced by other resources, such as Observation, ServiceRequest or Appointment, to fetch a minimal set of practitioner information. E.g. for display purposes. 

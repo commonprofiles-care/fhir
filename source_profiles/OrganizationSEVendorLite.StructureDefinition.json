@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2022-03-18T09:49:28.098+00:00"
   },
-  "url": "https://commonprofiles.care/StructureDefinition/OrganizationSEVendorLite/v1",
+  "url": "https://commonprofiles.care/StructureDefinition/OrganizationSECommonsLite/v1",
   "version": "1.0.0",
   "name": "OrganizationSEVendorLite",
   "status": "draft",
