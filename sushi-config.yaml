@@ -29,6 +29,7 @@ dependencies:
 menu:
   Home: index.html
   Artifacts: artifacts.html
+  AuditEvent Suggestion: auditEvent.html
 
 # templates:
 #   id: care.commonprofiles.fhir.template
