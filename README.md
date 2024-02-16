@@ -54,6 +54,6 @@ https://www.hl7.org/fhir/bodyweight.html
 
 
 ### Must support definition
-Must Support in this implementation guide is used to indicate that if particular element is available in the source system, it SHALL be populated with data. The system consuming the data SHALL be able to save the data and act on it accordingly.
+[Must Support](http://hl7.org/fhir/R4/profiling.html#mustsupport) in this implementation guide is used to indicate that if particular element is available in the source system, it SHALL be populated with data. The system consuming the data SHALL be able to save the data and act on it accordingly.
 
-In case an element cannot be populated because it is not available in the source system, if the cardinality rules allow it, the element can be left unfilled. In case the cardinality rules require an element to be populated, the Data Absent Reason extension SHALL be used.
+In case an element cannot be populated because it is not available in the source system, if the cardinality rules allow it, the element can be left unfilled. In case the cardinality rules require an element to be populated, the [Data Absent Reason](http://hl7.org/fhir/R4/extension-data-absent-reason.html) extension SHALL be used.
