@@ -9,5 +9,5 @@
   "title" : "Commonprofiles are a collaborative group of Swedish stakeholders of healthcare IT systems",
   "ci-build" : "http://build.fhir.org/ig/commonprofiles-care/fhir/branches/master/",
   "category" : "EHR Access",
-  "introduction" : "Common FHIR profile collaboration"
+  "introduction" : "Common Swedish FHIR profile collaboration"
 }
