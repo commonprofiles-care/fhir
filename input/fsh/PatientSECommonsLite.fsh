@@ -31,7 +31,7 @@ Description: "Simplified patient for identification for communication between sy
 * telecom.value 1.. MS
 
 
-Instance: PatientSECommonsLiteExample
+Instance: minimal-patient
 InstanceOf: PatientSECommonsLite
 Description: "Patient example."
 * name
@@ -40,7 +40,7 @@ Description: "Patient example."
 * identifier[personnummer].value = "191212121212"
 * deceasedBoolean = false
 
-Instance: PatientSECommonsLiteExample2
+Instance: minimal-patient2
 InstanceOf: PatientSECommonsLite
 Description: "Another Patient example."
 Usage: #example
@@ -59,7 +59,7 @@ Usage: #example
 * telecom[=].use = #home
 * deceasedBoolean = false
 
-Instance: PatientSECommonsLiteMaxExample
+Instance: maximal-patient
 InstanceOf: PatientSECommonsLite
 Description: "Maximal patient example."
 Usage: #example
