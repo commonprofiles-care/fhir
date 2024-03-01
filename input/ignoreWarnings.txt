@@ -14,3 +14,10 @@ The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced
 # Related to example data
 Code System URI 'http://example.com/system' is unknown so the code cannot be validated
 Code System URI 'http://example.com/CodeSystem/any' is unknown so the code cannot be validated
+A definition for CodeSystem 'http://example.com/system' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://example.com/CodeSystem/any' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://example.com/CodeSystem/soft-boolean' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://example.com/ValueSet/DemoSet123456789' could not be found, so the code cannot be validated
+Unknown code '123456' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10-cm' version '2024'
+ValueSet 'http://example.com/ValueSet/DemoSet123456789' not found
+The code '123456' in the system 'http://hl7.org/fhir/sid/icd-10-cm' is not in the options value set (ICD-10 Codes) specified by the questionnaire. Terminology Error: The provided code 'http://hl7.org/fhir/sid/icd-10-cm#123456' was not found in the value set 'http://hl7.org/fhir/ValueSet/icd-10|4.0.1'; Unknown code '123456' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10-cm' version '2024'

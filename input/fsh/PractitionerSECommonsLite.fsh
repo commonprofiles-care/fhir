@@ -21,11 +21,3 @@ Description: "This is a light weight Swedish Practitioner profile.
 
 Alias: $SEBaseHumanName = http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseHumanName
 
-Instance: PractitionerSELiteExample
-InstanceOf: PractitionerSEVendorLite
-Description: "Practitioner example."
-* name
-  * given[0] = "Lotta"
-  * family = "Läkare"
-* identifier[hsaid].value = "SE123456789-P001"
-* active = true

@@ -8,5 +8,5 @@ Alias:  EX              = http://example.com/system
 Alias:  EX_ANY          = http://example.com/CodeSystem/any
 Alias:  EX_BOOL         = http://example.com/CodeSystem/soft-boolean
 Alias:  DEMO_VS         = http://example.com/ValueSet/DemoSet123456789
-Alias:  LOINC           = https://loinc.org
-Alias:  ICD10           = http://hl7.org/fhir/sid/icd-10
+Alias:  LOINC           = http://loinc.org
+Alias:  ICD10           = http://hl7.org/fhir/sid/icd-10-cm

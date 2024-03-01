@@ -86,10 +86,3 @@ Description: """This is a light weight Swedish Organization profile.
             iso21090-ADXP-careOf named careOf 0..* MS
         and iso21090-ADXP-streetAddressLine named streetAddressLine 0..* MS
 
-Instance: OrganizationSELiteExample
-InstanceOf: OrganizationSEVendorLite
-Description: "Organization example."
-* name = "Vårdgivaren"
-* identifier[hsaid].value = "SE123456789-A001"
-* identifier[organizationIdentifier].value = "0000000000"
-* active = true

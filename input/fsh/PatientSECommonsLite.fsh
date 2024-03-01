@@ -29,13 +29,3 @@ Description: "Simplified patient for identification for communication between sy
 
 * telecom.system 1.. MS
 * telecom.value 1.. MS
-
-
-Instance: PatientSECommonsLiteExample
-InstanceOf: PatientSECommonsLite
-Description: "Patient example."
-* name
-  * given[0] = "Kalle"
-  * family = "Krank"
-* identifier[personnummer].value = "191212121212"
-* deceasedBoolean = false
