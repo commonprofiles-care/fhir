@@ -23,7 +23,7 @@ Description: """This is a light weight Swedish Organization profile.
 * identifier[organizationIdentifier].value ^short = "Swedish organization id."
 
 * type MS
-* type ^slicing.discriminator.type = #value
+* type ^slicing.discriminator.type = #pattern
 * type ^slicing.discriminator.path = "coding.code"
 * type ^slicing.rules = #open
 * type ^slicing.description = "Unordered, Open, by coding(code)"
@@ -85,3 +85,4 @@ Description: """This is a light weight Swedish Organization profile.
 * address.line.extension contains
             iso21090-ADXP-careOf named careOf 0..* MS
         and iso21090-ADXP-streetAddressLine named streetAddressLine 0..* MS
+

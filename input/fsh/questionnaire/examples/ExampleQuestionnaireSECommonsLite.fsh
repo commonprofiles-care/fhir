@@ -1,4 +1,4 @@
-Instance: QuestionnaireExample
+Instance: questionnaire-se-example
 InstanceOf: QuestionnaireSECommonsLite
 Description: "Example questionnaire."
 Usage: #example

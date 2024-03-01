@@ -1,15 +1,16 @@
-Instance: QuestionnaireResponseSELiteExample
+Instance: questionnaire-response-se-example
 InstanceOf: QuestionnaireResponseSECommonsLite
 Description: "Example questionnaire response."
 Usage: #example
 
 * identifier.system = EX
 * identifier.value = "qrId_1"
+* questionnaire = Canonical(questionnaire-se-example)
 * status = #completed
-* item[+].text = "Group"
+* item[+].text = "Questionnaire group"
 * item[=].linkId = "linkId_1"
 
-* item[=].item[+].text = "Short text string"
+* item[=].item[+].text = "Short text string, fixed item"
 * item[=].item[=].linkId = "linkId_1_1"
 * item[=].item[=].answer.valueString = "a short answer string"
 
@@ -31,7 +32,7 @@ In sed venenatis dui. Maecenas tincidunt faucibus purus id porttitor. Etiam curs
 
 * item[=].item[+].text = "Combo-box answer"
 * item[=].item[=].linkId = "linkId_1_5"
-* item[=].item[=].answer.valueString = "Rarely"
+* item[=].item[=].answer.valueString = "Sometimes"
 
 
 * item[=].item[+].text = "Multiple choice"
@@ -42,4 +43,4 @@ In sed venenatis dui. Maecenas tincidunt faucibus purus id porttitor. Etiam curs
 
 * item[=].item[+].text = "Diagnosis"
 * item[=].item[=].linkId = "linkId_1_7"
-* item[=].item[=].answer.valueCoding = ICD10#J301
+* item[=].item[=].answer.valueCoding = ICD10#123456
