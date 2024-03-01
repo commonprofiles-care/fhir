@@ -5,8 +5,8 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: care.commonprofiles.fhir
 canonical: https://commonprofiles.care/fhir
-name: "Common FHIR profile vendor collaboration"
-title: "Common FHIR profile vendor collaboration"
+name: "Swedish FHIR group common profiles"
+title: "Swedish FHIR group common profiles"
 status: active # draft | active | retired | unknown
 version: 1.0.2
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -15,7 +15,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#SE "Sweden" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: "Common FHIR profile vendor collaboration"
+  name: "Swedish FHIR group"
   url: https://commonprofiles.care
   email: info@commonprofiles.care
 
