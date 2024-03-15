@@ -30,6 +30,9 @@ menu:
   Home: index.html
   Artifacts: artifacts.html
 
+parameters:
+  path-expansion-params: Parameters-expansion.json
+
 # templates:
 #   id: care.commonprofiles.fhir.template
 #   source: ./commonprofiles-template

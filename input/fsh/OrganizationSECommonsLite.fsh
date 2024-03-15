@@ -51,7 +51,7 @@ Description: """This is a light weight Swedish Organization profile.
 * type[careProvider].coding.version = "http://snomed.info/sct/45991000052106/version/20220531"
 * type[careProvider].coding.code = #143591000052106
 * type[careProvider].coding.code 1..
-* type[careProvider].coding.code ^comment = "The Snomed CT concept 143591000052106 | vårdgivare| is expected to be included in the Swedish Snomed CT release planned for 2022-05-31."
+* type[careProvider].coding.code ^comment = "The Snomed CT concept 143591000052106 | vårdgivare|"
 * identifier[organizationIdentifier].value obeys organisationsnummer-invariant
 
 *       name
@@ -85,4 +85,76 @@ Description: """This is a light weight Swedish Organization profile.
 * address.line.extension contains
             iso21090-ADXP-careOf named careOf 0..* MS
         and iso21090-ADXP-streetAddressLine named streetAddressLine 0..* MS
+
+Instance: minimal-organization
+InstanceOf: OrganizationSECommonsLite
+Description: "Minimal Organization instance"
+Usage: #example
+* meta.profile = Canonical(OrganizationSECommonsLite)
+* identifier
+  * use = #official
+  * type = IDENTIFIER_TYPE#XX
+  * system = "urn:oid:2.5.4.97"
+  * value = "5566778899"
+* name = "Svenska Kliniken AB"
+* type[0].coding = SCT#43741000 "Vårdenhet"
+  * version = "http://snomed.info/sct/45991000052106/version/20220531"
+* type[+].coding = SCT#143591000052106 "Vårdgivare"
+  * version = "http://snomed.info/sct/45991000052106/version/20220531"
+* telecom[0]
+  * system = #phone
+  * value = "+46101234567"
+* telecom[+]
+  * system = #email
+  * value = "info@svenskakliniken.se"
+* address
+  * line = "Storgatan 1"
+  * city = "Stockholm"
+  * state = "Stockholms län"
+  * postalCode = "100 55"
+  * country = "SE"
+
+Instance: maximal-organization
+InstanceOf: OrganizationSECommonsLite
+Description: "Maximal Organization instance"
+Usage: #example
+* meta.profile = Canonical(OrganizationSECommonsLite)
+* identifier[0]
+  * use = #official
+  * type = IDENTIFIER_TYPE#PRN
+  * system = "urn:oid:1.2.752.29.4.19"
+  * value = "HSA-ID-EXAMPLE-1234"
+* identifier[+]
+  * use = #official
+  * type = IDENTIFIER_TYPE#XX
+  * system = "urn:oid:2.5.4.97"
+  * value = "5567210564"
+* type[0].coding = SCT#43741000 "Vårdenhet"
+  * version = "http://snomed.info/sct/45991000052106/version/20220531"
+* type[+].coding = SCT#143591000052106 "Vårdgivare"
+  * version = "http://snomed.info/sct/45991000052106/version/20220531"
+* name = "Svenska Vårdcentralen"
+* telecom[0]
+  * system = #phone
+  * value = "+46-8-123-4567"
+* telecom[+]
+  * system = #email
+  * value = "kontakt@svenskavardcentralen.se"
+* address
+  * use = #work
+  * type = #both
+  * text = "Storgatan 1, 123 45 Stockholm, Sweden"
+  * line = "Storgatan 1"
+  * city = "Stockholm"
+  * district = "Stockholm"
+  * state = "Stockholm"
+  * postalCode = "123 45"
+  * country = "Sweden"
+  * line
+    * extension[0]
+      * url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf"
+      * valueString = "c/o Svenska Hälsovården"
+    * extension[+]
+      * url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetAddressLine"
+      * valueString = "Storgatan 1"
 
