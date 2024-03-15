@@ -3,11 +3,11 @@
   "version" : "1.0.2",
   "path" : "https://commonprofiles.care/fhir/1.0.2",
   "milestone" : false,
-  "desc": "Common FHIR profile vendor collaboration",
+  "desc": "Commonprofiles are a collaborative group of Swedish stakeholders of healthcare IT systems",
   "status" : "release",
   "sequence" : "Releases",
-  "title" : "Common FHIR profile vendor collaboration",
+  "title" : "Commonprofiles are a collaborative group of Swedish stakeholders of healthcare IT systems",
   "ci-build" : "http://build.fhir.org/ig/commonprofiles-care/fhir/branches/master/",
   "category" : "EHR Access",
-  "introduction" : "Common FHIR profile vendor collaboration"
+  "introduction" : "Common Swedish FHIR profile collaboration"
 }

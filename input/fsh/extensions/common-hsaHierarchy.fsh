@@ -14,7 +14,7 @@ This can among other things be used to evaluate PDL (Patientdatalagen, eng Patie
 * ^context[0].type = #element
 * ^context[=].expression = "Resource"
 * ^context[+].type = #element
-* ^context[=].expression = "Element"
+* ^context[=].expression = "Organization"
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

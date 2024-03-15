@@ -92,3 +92,4 @@ Usage: #example
     * coding[+] = SCT#3842006 "Chiropractor"
   * period.start = "2020-01-01"
   * issuer.display = "Swedish Medical License Board"
+

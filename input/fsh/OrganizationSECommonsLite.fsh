@@ -23,7 +23,7 @@ Description: """This is a light weight Swedish Organization profile.
 * identifier[organizationIdentifier].value ^short = "Swedish organization id."
 
 * type MS
-* type ^slicing.discriminator.type = #value
+* type ^slicing.discriminator.type = #pattern
 * type ^slicing.discriminator.path = "coding.code"
 * type ^slicing.rules = #open
 * type ^slicing.description = "Unordered, Open, by coding(code)"
@@ -157,3 +157,4 @@ Usage: #example
     * extension[+]
       * url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetAddressLine"
       * valueString = "Storgatan 1"
+

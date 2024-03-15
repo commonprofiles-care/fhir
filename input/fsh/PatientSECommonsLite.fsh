@@ -30,7 +30,6 @@ Description: "Simplified patient for identification for communication between sy
 * telecom.system 1.. MS
 * telecom.value 1.. MS
 
-
 Instance: minimal-patient
 InstanceOf: PatientSECommonsLite
 Description: "Patient example."

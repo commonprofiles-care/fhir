@@ -51,3 +51,9 @@ https://commonprofiles.care/StructureDefinition/common-hsaHierarchy
 Including the resource type follows the same pattern which is used both for the Swedish base profiles and also for the FHIR base resources and profiles. Examples:
 http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/StructureDefinition-SEBaseOrganization.html
 https://www.hl7.org/fhir/bodyweight.html
+
+
+### Must support definition
+[Must Support](http://hl7.org/fhir/R4/profiling.html#mustsupport) in this implementation guide is used to indicate that if particular element is available in the source system, it SHALL be populated with data. The system consuming the data SHALL be able to save the data and act on it accordingly.
+
+In case an element cannot be populated because it is not available in the source system, if the cardinality rules allow it, the element can be left unfilled. In case the cardinality rules require an element to be populated, the [Data Absent Reason](http://hl7.org/fhir/R4/extension-data-absent-reason.html) extension SHALL be used.
