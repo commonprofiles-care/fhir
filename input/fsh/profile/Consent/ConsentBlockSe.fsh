@@ -109,7 +109,7 @@ Description: "Profile to represent a patient block to accessing their personal h
   * provision contains
       permitOrganization 1..1 and
       permitData 0..*
-  * provision[permitOrganization] only BackboneElement
+  * provision[permitOrganization]
     * type 1..
     * type = #permit
     * period 1..
@@ -187,7 +187,7 @@ Description: "Profile to represent a patient block to accessing their personal h
     * dataPeriod ..0
     * data ..0
     * provision ..0
-  * provision[permitData] only BackboneElement
+  * provision[permitData]
     * type 1..
     * type = #permit
     * period 1..
