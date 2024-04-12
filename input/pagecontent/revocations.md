@@ -1,0 +1,5 @@
+# Introduction
+This page explains how to interpret the structure of the [ConsentTemporaryRevocationSe](StructureDefinition-ConsentTemporaryRevocationSe.html) profile.
+
+## Intended use
+This profile defines how to represent a temporary revocation of an inner block, in accordance with Swedish Patient Data Act. An inner block means that the patient has blocked access to their data belonging to a specific care unit from outside of that care unit. A temporary revocation of an inner block means that the inner block is temporarily lifted for a specific clinician or a care unit outside of the care unit where the block was set, but within the same care provider. In order to enforce a temporary revocation, patient consent is needed. A temporary revocation is, as the name implies, temporary and should only be active for a short period of time.
