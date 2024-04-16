@@ -1,6 +1,6 @@
-Profile: ConsentSharedElectronicHealthRecordSe
+Profile: ConsentSharedElectronicHealthRecordSE
 Parent: Consent
-Id: ConsentSharedElectronicHealthRecordSe
+Id: ConsentSharedElectronicHealthRecordSE
 Description: "Profile to represent a consent given to a clinician or a care unit to access a patient's electronic health record ."
 * ^version = "1.1.2"
 * ^status = #active
