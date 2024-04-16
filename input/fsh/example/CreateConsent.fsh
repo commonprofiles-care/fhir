@@ -1,5 +1,5 @@
 Instance: CreateConsent
-InstanceOf: ConsentSharedElectronicHealthRecordSe
+InstanceOf: ConsentSharedElectronicHealthRecordSE
 Description: "Example of consent to access shared EHR given by a patient or a representative of the patient"
 * meta.profile = "https://fhir.cambio.se/StructureDefinition/ConsentSharedElectronicHealthRecordSe|1.1.2"
 * status = http://hl7.org/fhir/consent-state-codes#active
