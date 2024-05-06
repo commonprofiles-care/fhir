@@ -1,15 +1,26 @@
 name: Publish release
 
 on:
-  release:
-    types: [published] # runs when stable and pre-release is published
-  push: # temporary for debugging
+  push:
+  #  tags:
+  #    - 'v*'
 
 jobs:
   ig-publisher:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: nowsprinting/check-version-format-action@v3
+        id: version
+        with:
+          prefix: 'v'
+
+      - name: Version tag only step
+        run: |
+          echo "Tag format is invalid"
+          exit 1
+        if: steps.version.outputs.is_valid != 'true'
+    
       - uses: actions/checkout@v3
 
       - name: Install Jekyll
