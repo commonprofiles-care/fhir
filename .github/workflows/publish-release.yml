@@ -1,0 +1,29 @@
+name: Publish release
+
+on:
+  release:
+    types: [published] # runs when stable and pre-release is published
+  push: # temporary for debugging
+
+jobs:
+  ig-publisher:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Jekyll
+        run: sudo gem install jekyll
+
+      - name: Install Sushi
+        run: sudo npm install -g fsh-sushi
+
+      - name: Install IG publisher
+        run: |
+          chmod +x ./_updatePublisher.sh
+          ./_updatePublisher.sh -y
+
+      - name: Build IG
+        run: |
+          chmod +x ./_genonce.sh
+          ./_genonce.sh
