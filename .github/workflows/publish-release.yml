@@ -2,8 +2,8 @@ name: Publish release
 
 on:
   push:
-  #  tags:
-  #    - 'v*'
+    tags:
+      - 'v*'
 
 jobs:
   ig-publisher:
@@ -17,7 +17,7 @@ jobs:
 
       - name: Version tag only step
         run: |
-          echo "Tag format is invalid"
+          echo "Tag format is invalid: double check that it is a valid semver tag"
           exit 1
         if: steps.version.outputs.is_valid != 'true'
     
