@@ -34,3 +34,35 @@ Description: "This profile aims to support use cases concerning nationally defin
     MS
 
 * intent = #order
+
+Instance: minimal-servicerequest
+InstanceOf: ServiceRequest
+Description: "A simple example of a Swedish ServiceRequest resource."
+Usage: #example
+* meta.profile = Canonical(ServiceRequestSelfReferralSECommonsLite)
+* authoredOn = "2024-04-26"
+* status = #draft
+* performer = Reference(maximal-organization)
+* subject = Reference(maximal-patient)
+* reasonCode = SCT#422400008 "kräkning"
+* intent = #order
+
+Instance: maximal-self-referral
+InstanceOf: ServiceRequest
+Usage: #example
+Description: "A maximal example of a Swedish ServiceRequest resource."
+* meta.profile = Canonical(ServiceRequestSelfReferralSECommonsLite)
+* identifier
+  * system = "http://example.org/referral-ids"
+  * value = "REF-12345"
+* status = #active
+* intent = #order
+* category = SCT#108252007 "Laboratory procedure"
+* priority = #routine
+* subject = Reference(maximal-patient)
+* authoredOn = "2023-05-18T10:30:00Z"
+* subject = Reference(maximal-patient)
+* performer = Reference(maximal-organization)
+* reasonCode = SCT#422400008 "kräkning"
+  * text = "Patient complains of regular vomiting"
+* note.text = "Patient reports experiencing abdominal pain for the past 3 days, which has been gradually worsening. No known triggers or relieving factors. No associated symptoms such as fever, nausea, or vomiting."
