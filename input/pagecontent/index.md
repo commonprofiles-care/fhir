@@ -14,6 +14,9 @@ It also includes core profiles, value sets and extensions which have not been pu
 ### Ongoing/upcoming work:
 * Profiles and workflow patterns for appointment bookings.
 
+### Naming standard:
+* Here you find out namning standards
+
 
 ## The collaborative group
 The development, administration and publishing of the FHIR artifacts is carried out by a collaborative group with representation from
