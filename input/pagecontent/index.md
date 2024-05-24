@@ -15,7 +15,7 @@ It also includes core profiles, value sets and extensions which have not been pu
 * Profiles and workflow patterns for appointment bookings.
 
 ### Naming standard:
-* Here you find out namning standards
+* [Here](naming-standard.md) you find out namning standards
 
 
 ## The collaborative group
