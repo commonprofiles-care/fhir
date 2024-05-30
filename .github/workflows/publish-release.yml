@@ -8,6 +8,8 @@ on:
 jobs:
   ig-publisher:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.full_without_prefix }}
 
     steps:
       - uses: nowsprinting/check-version-format-action@v3
@@ -20,7 +22,7 @@ jobs:
           echo "Tag format is invalid: double check that it is a valid semver tag"
           exit 1
         if: steps.version.outputs.is_valid != 'true'
-    
+
       - uses: actions/checkout@v3
 
       - name: Install Jekyll
@@ -45,3 +47,25 @@ jobs:
           name: release-ig
           path: output/
           if-no-files-found: error
+
+  ftp-upload:
+    needs: ig-publisher
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download IG artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: release-ig
+
+      - name: Rename output folder
+        run: mv output/ ${{ needs.ig-publisher.outputs.version }}
+
+      - name: FTP Upload
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ${{ needs.ig-publisher.outputs.version }}/
+          server-dir: ${{ secrets.FTP_RELEASE_IG_LOCATION }}
