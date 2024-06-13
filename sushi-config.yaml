@@ -29,7 +29,8 @@ dependencies:
 menu:
   Home: index.html
   Artifacts: artifacts.html
-  PDL: #pdl.html
+  SVOD: 
+    SVOD Intro: svod.html
     Blocks: blocks.html
     Consents: consents.html
     Revocations: revocations.html 
