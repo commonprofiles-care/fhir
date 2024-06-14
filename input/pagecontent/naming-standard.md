@@ -3,9 +3,9 @@
 Names of profiles shoudl confirm to this patter:
 
 ```
-<Parent resource/profile>SEIndustry<Profile type>
+<Parent resource/profile>SeCommons<Profile type>
 ```
-i.e. the parent followed by the string literal `SEIndustry` followed by the profile type, where `Profile type` could be one of:
+i.e. the parent followed by the string literal `SeCommons` followed by the profile type, where `Profile type` could be one of:
 
 - `Lite` a extensively constrained profile for light use cases, i.e. requiring few data elements
 - `Full` a less constrained profile...
@@ -13,7 +13,7 @@ i.e. the parent followed by the string literal `SEIndustry` followed by the prof
 ## Examples
 
 ```
-OrganizationSEIndustryLite
-PatientSEIndustryFull
-VitalSignsSEIndustryFull
+OrganizationSeCommonsLite
+PatientSeCommonsFull
+VitalSignsSeCommonsFull
 ```
