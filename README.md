@@ -1,7 +1,7 @@
 # fhir
 * Build destination: https://build.fhir.org/ig/commonprofiles-care/fhir/
 * Branches: https://build.fhir.org/ig/commonprofiles-care/fhir/branches/
-* Published destination: https://commonprofiles.care/
+* Published destination: https://commonprofiles.care
 
 More info
 * https://github.com/FHIR/auto-ig-builder/blob/master/README.md
