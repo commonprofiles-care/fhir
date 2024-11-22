@@ -1,3 +1,4 @@
+// this parameters instance configures the Swedish expansion of SNOMED CT when building the IG
 Instance: expansion
 InstanceOf: Parameters
 Description: "SNOMED CT Swedish expansion parameter"
