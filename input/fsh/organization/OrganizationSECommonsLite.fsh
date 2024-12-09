@@ -119,6 +119,8 @@ InstanceOf: OrganizationSECommonsLite
 Description: "Maximal Organization instance"
 Usage: #example
 * meta.profile = Canonical(OrganizationSECommonsLite)
+* extension[hsaHierarchy].extension[hsaCareProvider].valueReference = Reference(minimal-organization)
+* extension[hsaHierarchy].extension[hsaCareUnit].valueReference = Reference(Organization/sample-careUnit-organization)
 * identifier[0]
   * use = #official
   * type = IDENTIFIER_TYPE#PRN
@@ -146,8 +148,6 @@ Usage: #example
   * text = "Storgatan 1, 123 45 Stockholm, Sweden"
   * line = "Storgatan 1"
   * city = "Stockholm"
-  * district = "Stockholm"
-  * state = "Stockholm"
   * postalCode = "123 45"
   * country = "Sweden"
   * line
@@ -157,4 +157,5 @@ Usage: #example
     * extension[+]
       * url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetAddressLine"
       * valueString = "Storgatan 1"
+
 
