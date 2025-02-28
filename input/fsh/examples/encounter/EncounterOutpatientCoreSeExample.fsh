@@ -1,14 +1,15 @@
 Instance: EncounterOutpatientCoreSeExample
 InstanceOf: EncounterOutpatientCoreSe
-Description: "An example of an encounter"
+Description: "An example of a finished outpatient encounter at the patient's home."
 Usage: #example
 * meta
   * profile = "https://fhir.cambio.se/StructureDefinition/EncounterOutpatientCoreSe|1.0.0"
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode/#AMB
-* type = $SnomedCT#33879002
+* type = $SnomedCT#439708006
 * subject
+  * type = "Patient"
   * identifier
-    * system = "hhttp://electronichealth.se/identifier/personnummer"
+    * system = "http://electronichealth.se/identifier/personnummer"
     * value = "191212121212"
 * status = #finished
 * period
@@ -18,8 +19,8 @@ Usage: #example
   * identifier
     * system = "urn:oid:1.2.752.29.4.19"
     * value = "SE162321000016-efca"
-* extension[0]
-  * url = "https://fhir.cambio.se/StructureDefinition/encounterPerformingUnit|1.0.0"
+* extension
+  * url = "https://fhir.cambio.se/StructureDefinition/encounterPerformingUnit"
   * valueReference
     * type = "Organization"
     * identifier

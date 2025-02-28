@@ -1,9 +1,9 @@
-Instance: EncounterOutpatientSeExample
-InstanceOf: EncounterOutpatientSe
-Description: "An example of an ongoing outpatient encounter done via telephone."
+Instance: EncounterOutpatientWriteSeExample
+InstanceOf: EncounterOutpatientWriteSe
+Description: "An example of a newly created ongoing outpatient encounter done via telephone."
 Usage: #example
 * meta
-  * profile = "https://fhir.cambio.se/StructureDefinition/EncounterOutpatientSe|1.0.0"
+  * profile = "https://fhir.cambio.se/StructureDefinition/EncounterOutpatientWriteSe|2.0.0"
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode/#AMB
 * type = $SnomedCT#185317003
 * subject
@@ -24,8 +24,8 @@ Usage: #example
   * identifier
     * system = "urn:oid:1.2.752.29.4.19"
     * value = "SE162321000016-efca"
-* extension[0]
-  * url = "https://fhir.cambio.se/StructureDefinition/encounterPerformingUnit|1.0.0"
+* extension
+  * url = "https://fhir.cambio.se/StructureDefinition/encounterPerformingUnit"
   * valueReference
     * type = "Organization"
     * identifier

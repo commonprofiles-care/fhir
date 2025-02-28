@@ -13,12 +13,11 @@ Description: "This is an Encounter profile to be used for outpatient encounters 
 * obeys planned-encounter-invariant
 * obeys arrived-encounter-invariant
 * class = #AMB
+* type from encounter-types-valueset (extensible)
 * type 1..1
-  * coding from encounter-status-refined-valueset (required)
   * coding 1..
     * system 1..
     * code 1..
-* subject obeys patient-identifier-system-invariant
 * subject 1..
   * identifier 1..
     * system 1..
