@@ -29,11 +29,11 @@ dependencies:
 menu:
   Home: index.html
   Artifacts: artifacts.html
-  SVOD: 
-    SVOD Intro: svod.html
-    Blocks: blocks.html
-    Consents: consents.html
-    Revocations: revocations.html 
+  SVOD: svod.html
+#    SVOD Intro: svod.html
+#    Blocks: blocks.html
+#    Consents: consents.html
+#    Revocations: revocations.html 
 
 # templates:
 #   id: care.commonprofiles.fhir.template
