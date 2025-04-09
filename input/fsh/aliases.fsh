@@ -11,3 +11,12 @@ Alias: $contractsignertypecodes = http://terminology.hl7.org/CodeSystem/contract
 Alias: $consentaction = http://terminology.hl7.org/CodeSystem/consentaction
 Alias: $v3-ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
 
+Alias:  EX              = http://example.com/system
+Alias:  EX_ANY          = http://example.com/CodeSystem/any
+Alias:  EX_BOOL         = http://example.com/CodeSystem/soft-boolean
+Alias:  DEMO_VS         = http://example.com/ValueSet/DemoSet123456789
+Alias:  LOINC           = https://loinc.org
+Alias:  ICD10           = http://hl7.org/fhir/sid/icd-10
+Alias:  MARITALSTATUS   = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
+Alias:  CONTACTROLE2    = http://terminology.hl7.org/CodeSystem/v2-0131
+Alias:  IDENTIFIER_TYPE = http://terminology.hl7.org/CodeSystem/v2-0203
