@@ -6,13 +6,16 @@ It also includes core profiles, value sets and extensions which have not been pu
 
 |Name|FHIR resource|
 |----|----|
-|[PatientSeVendorLite](StructureDefinition-PatientSEVendorLite.html)|Patient|
-|[PractitionerSeVendorLite](StructureDefinition-PractitionerSEVendorLite.html)|Practitioner|
-|[OrganizationSeVendorLite](StructureDefinition-OrganizationSEVendorLite.html)|Organization|
-|ServiceRequestSeVendorLite|ServiceRequest|
+|[PatientSeCommonsLite](StructureDefinition-PatientSECommonsLite.html)|Patient|
+|[PractitionerSeCommonsLite](StructureDefinition-PractitionerSECommonsLite.html)|Practitioner|
+|[OrganizationSeCommonsLite](StructureDefinition-OrganizationSECommonsLite.html)|Organization|
+|ServiceRequestSeCommonsLite|ServiceRequest|
 
 ### Ongoing/upcoming work:
 * Profiles and workflow patterns for appointment bookings.
+
+### Naming standard:
+* [Here](naming-standard.md) you find our naming standards for new artifacts.
 
 
 ## The collaborative group

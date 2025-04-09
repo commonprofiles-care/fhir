@@ -1,0 +1,71 @@
+name: Publish release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  create-ig:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.full_without_prefix }}
+
+    steps:
+      - uses: nowsprinting/check-version-format-action@v3
+        id: version
+        with:
+          prefix: 'v'
+
+      - name: Version tag only step
+        run: |
+          echo "Tag format is invalid: double check that it is a valid semver tag"
+          exit 1
+        if: steps.version.outputs.is_valid != 'true'
+
+      - uses: actions/checkout@v3
+
+      - name: Install Jekyll
+        run: sudo gem install jekyll
+
+      - name: Install Sushi
+        run: sudo npm install -g fsh-sushi
+
+      - name: Install IG publisher
+        run: |
+          chmod +x ./_updatePublisher.sh
+          ./_updatePublisher.sh -y
+
+      - name: Build IG
+        run: |
+          chmod +x ./_genonce.sh
+          ./_genonce.sh
+
+      - name: Upload IG as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-ig
+          path: output/
+          if-no-files-found: error
+
+  ftp-upload:
+    needs: create-ig
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download IG artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: release-ig
+
+      - name: Rename output folder
+        run: mv output/ ${{ needs.create-ig.outputs.version }}
+
+      - name: FTP Upload
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ${{ needs.create-ig.outputs.version }}/
+          server-dir: ${{ secrets.FTP_RELEASE_IG_LOCATION }}
