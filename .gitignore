@@ -10,3 +10,7 @@ node_modules
 package*.json
 publish/ig-build-zips
 !publish/**/package*.json
+
+# Claude Code personal files (may hold secrets)
+**/.claude/settings.local.json
+CLAUDE.local.md
